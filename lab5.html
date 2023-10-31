@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+    <div id="calc">
+    <h3 style="text-align: left;">Standard</h3>
+    <form id="calculator">
+        <input type="text" id="display" disabled>
+        <input type="text" id="result" disabled>
+        </form>
+        <table>
+            <tr>
+                <td></td>
+                <td><button type="button" onclick="ce() "id="secondary">CE</button></td>
+                <td><button type="button" onclick="squareRoot()" id="secondary">SQRT</button></td>
+                <td><button type="button" onclick="buttonPress('/')" id="secondary">/</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="buttonPress('7')">7</button></td>
+                <td><button type="button" onclick="buttonPress('8')">8</button></td>
+                <td><button type="button" onclick="buttonPress('9')">9</button></td>
+                <td><button type="button" onclick="buttonPress('*')" id="secondary">X</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="buttonPress('4')">4</button></td>
+                <td><button type="button" onclick="buttonPress('5')">5</button></td>
+                <td><button type="button" onclick="buttonPress('6')">6</button></td>
+                <td><button type="button" onclick="buttonPress('-')" id="secondary">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="buttonPress('1')">1</button></td>
+                <td><button type="button" onclick="buttonPress('2')">2</button></td>
+                <td><button type="button" onclick="buttonPress('3')">3</button></td>
+                <td><button type="button" onclick="buttonPress('+')"id="secondary">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="sign()">+/-</button></td>
+                <td><button type="button" onclick="buttonPress(0)">0</button></td>
+                <td><button type="button" onclick="buttonPress('.')">.</button></td>
+                <td><button type="button" onclick="calculate()" id="submit">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <div id="matrix-container">
+        <form id="matrix-input">
+            <h3>Matrix A</h3>
+            <p>n1:<input type="text" id="n1" style="font-size: larger;"></p>
+            <p>m1:<input type="text" id="m1" style="font-size: larger;"></p>
+            <label for="op"><h3>Operation:</h3></label>
+            <select name="op" id="op">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+            </select>
+            <button type="button" id="submit" onclick="operation()">Calc</button>
+            <h3>Matrix B</h3>
+            <p>n2:<input type="text" id="n2" style="font-size: larger;"></p>
+            <p>m2:<input type="text" id="m2" style="font-size: larger;"></p>
+            <button type="button" id="submit" onclick="main()">Go</button>
+            <button type="button" id="submit" onclick="clearMatrices()">Clear</button>
+        </form>
+    </div>
+    <script src="./calcScript.js"></script>
+    <script src="./matrixScript.js"></script>
+</body>
+</html>

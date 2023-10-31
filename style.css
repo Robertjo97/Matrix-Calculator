@@ -1,0 +1,114 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+#result, #display {
+    display:block;
+    width:95%;
+    text-align: right;
+    border:none;
+}
+
+#display {
+    margin-top:87px;
+}
+
+#result {
+    height:60px;
+    font-size: 48px;
+    font-weight: bold;
+    color:black;
+    text-align: right;
+    padding:5px;
+}
+
+#secondary {
+    background-color: #f6f6f6;
+}
+
+#secondary:hover{
+    background-color: white;
+}
+
+#calc {
+    border-radius: 8px;
+    margin:5px;
+    display:block;
+    padding:1%;
+    background-color: #ececec;
+    height: 600px;
+    width: 500px;
+}
+
+#submit {
+    background-color: #004fe1; 
+    color:white;
+    margin:5px;
+}
+
+#submit:hover {
+    background-color: #08a1f7;
+}
+
+button {
+    height:68px;
+    width:114px;
+    border-radius: 4px;
+    border:0px solid white;
+    background-color: white;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #f6f6f6;
+}
+button:active{
+    background-color: #ececec;
+    color:black;
+}
+
+table {
+    margin-top:20px;
+    table-layout: fixed;
+    width:100%;
+}
+
+#matrix-container {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+#matrix-container > * {
+    background-color: #ececec;
+    width:500px;
+    margin:5px;
+    border-radius: 8px;
+}
+#matrix-input {
+    background-color: #ececec;
+    padding:1%;
+    font-size: larger;
+}
+
+button#submit:hover {
+    cursor: pointer;
+}
+
+p {
+    font-weight: bold;
+}
+
+#matrix-container td {
+    border:2px solid black;
+}
+
+#cell {
+    width:50px;
+    font-size: larger;
+}
