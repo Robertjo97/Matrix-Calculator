@@ -39,4 +39,4 @@ The matrix calculator allows users to perform various matrix operations, includi
 
 ## About
 
-This project was created for my Web Programming class at California State University, Fresno. Its main purpose is to demonstrate basic arithmetic and matrix operations using a web application. It serves as a useful tool for users who need to perform mathematical calculations quickly and conveniently.
+This project was created for my Web Programming class at California State University, Fresno. Its main purpose is to demonstrate basic arithmetic and matrix operations using a web application. It serves as a useful tool for users who need to perform mathematical calculations quickly and conveniently. 
